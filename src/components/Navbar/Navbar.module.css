@@ -1,0 +1,78 @@
+.navbarDesktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  background-color: var(--american-river);
+  padding: 0 20px 0 20px;
+}
+  
+.navbarDesktop > span {
+  font-size: 2rem;
+  font-weight: 800;
+}
+  
+.navbarLinkes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 550px;
+}
+  
+.homeAboutContact span {
+	margin-right: 20px;
+	font-size: 1.2rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+  
+.homeAboutContact span:hover {
+	color: var(--chi-gong);
+}
+  
+.signUpSignIn {
+	width: 250px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	gap: 15px;
+}
+  
+.hamburgerMenu {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	justify-content: flex-start;
+	cursor: pointer;
+}
+
+.navbarMobile {
+	display: none;
+}
+
+.navbarMobile > span {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.dropdownMenu {
+	padding: 8px 20px;
+	background-color: var(--american-river);
+}
+
+@media only screen and (max-width: 768px) {
+	.navbarDesktop {
+		display: none;
+	}
+
+	.navbarMobile {
+		display: flex;
+		padding: 0 20px;
+		justify-content: space-between;
+		align-items: center;
+		height: 64px;
+		background-color: var(--american-river);
+	}
+}

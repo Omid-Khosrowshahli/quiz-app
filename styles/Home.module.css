@@ -1,0 +1,42 @@
+.container {
+  padding: 0.5rem 2rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.heroDesc {
+  max-width: 600px;
+}
+
+.letsGoBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.heroMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .hero {
+    display: none;
+  }
+
+  .heroMobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .letsGoBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}

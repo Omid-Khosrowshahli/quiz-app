@@ -1,0 +1,13 @@
+.defaultButton {
+  border-radius: 5px;
+  padding: 8px 16px;
+  background-color: var(--city-lights);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+.defaultButton:hover {
+  background-color: var(--soothing-breeze);
+}
